@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixMyFile | Professional File Tools</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://unpkg.com/mammoth@1.4.8/mammoth.browser.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FixMy<span>File</span></div>
+    </nav>
+
+    <main class="container">
+        <div class="ad-placeholder">Top Advertisement Section</div>
+
+        <div class="card">
+            <h1>Quick Converter & Resizer</h1>
+            <div class="upload-section">
+                <input type="file" id="fileInput" hidden />
+                <label for="fileInput" class="select-btn">Select Your File</label>
+                <p id="fileName">No file chosen</p>
+            </div>
+
+            <div class="settings">
+                <div class="input-box">
+                    <label>Select Tool:</label>
+                    <select id="formatSelect">
+                        <option value="jpeg">Convert to JPG</option>
+                        <option value="png">Convert to PNG</option>
+                        <option value="webp">Convert to WebP</option>
+                        <option value="pdf">Image to PDF</option>
+                        <option value="wordToPdf">Word to PDF</option>
+                        <option value="excelToPdf">Excel to PDF</option>
+                        <option value="pdfSplit">PDF Splitter</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label>Target Size (KB):</label>
+                    <select id="targetSize">
+                        <option value="0">Original Size</option>
+                        <option value="50">Under 50 KB</option>
+                        <option value="100">Under 100 KB</option>
+                        <option value="200">Under 200 KB</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="convertBtn" class="go-btn">Convert & Download</button>
+            <div id="status" style="margin-top: 20px; font-weight: bold; color: #4f46e5;"></div>
+        </div>
+
+        <div class="ad-placeholder">Bottom Advertisement Section</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FixMyFile | Created by <strong>Gloryson Mohendiar</strong></p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a> | 
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

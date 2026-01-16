@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FixMyFile | Image to PDF & KB Resizer Online</title>
+    <meta
+      name="description"
+      content="Free online tool to convert images to PDF, JPG, PNG and resize photos to 50KB, 100KB, 200KB for government jobs and exams."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">FixMy<span>File</span></div>
+    </nav>
+
+    <main class="container">
+      <div class="ad-placeholder">Your Ad Here</div>
+
+      <div class="card">
+        <h1>Quick Converter & Resizer</h1>
+        <p>Upload your file, choose a size, and download instantly.</p>
+
+        <div class="upload-section" id="dropZone">
+          <input
+            type="file"
+            id="fileInput"
+            hidden
+            accept="image/*,application/pdf"
+          />
+          <label for="fileInput" class="select-btn">Select Your File</label>
+          <p id="fileName">No file chosen</p>
+        </div>
+
+        <div class="settings">
+          <div class="input-box">
+            <label>Convert To:</label>
+            <select id="formatSelect">
+              <option value="jpeg">JPG / JPEG</option>
+              <option value="png">PNG</option>
+              <option value="pdf">PDF Document</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <label>Target Size (KB):</label>
+            <select id="targetSize">
+              <option value="0">Original Size</option>
+              <option value="50">Under 50 KB</option>
+              <option value="100">Under 100 KB</option>
+              <option value="200">Under 200 KB</option>
+              <option value="300">Under 300 KB</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="convertBtn" class="go-btn">Convert & Download</button>
+        <div id="status"></div>
+      </div>
+
+      <section class="info-section">
+        <h2>How to use FixMyFile?</h2>
+        <div class="steps">
+          <div class="step">1. Upload your Image or PDF.</div>
+          <div class="step">2. Select the format (JPG, PNG, or PDF).</div>
+          <div class="step">3. Choose the KB size for government forms.</div>
+          <div class="step">4. Click Convert and Download.</div>
+        </div>
+      </section>
+
+      <div class="ad-placeholder">Your Ad Here</div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 FixMyFile | Created by <strong>Gloryson Mohendiar</strong>
+      </p>
+      <div class="footer-links">
+        <a href="about.html">About Us</a> |
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
